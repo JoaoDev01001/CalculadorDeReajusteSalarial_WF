@@ -33,7 +33,7 @@
             txtSalario = new TextBox();
             label2 = new Label();
             txtHoraTrabalhada = new TextBox();
-            txtClass_Salarial = new TextBox();
+            txtSituacaoSalarial = new TextBox();
             bttCalcular = new Button();
             lbxResumo = new ListBox();
             toolTip1 = new ToolTip(components);
@@ -81,14 +81,14 @@
             txtHoraTrabalhada.Size = new Size(169 , 27);
             txtHoraTrabalhada.TabIndex = 4;
             // 
-            // txtClass_Salarial
+            // txtSituacaoSalarial
             // 
-            txtClass_Salarial.BackColor = Color.Yellow;
-            txtClass_Salarial.Location = new Point(12 , 435);
-            txtClass_Salarial.Name = "txtClass_Salarial";
-            txtClass_Salarial.ReadOnly = true;
-            txtClass_Salarial.Size = new Size(346 , 27);
-            txtClass_Salarial.TabIndex = 5;
+            txtSituacaoSalarial.BackColor = Color.Yellow;
+            txtSituacaoSalarial.Location = new Point(12 , 435);
+            txtSituacaoSalarial.Name = "txtSituacaoSalarial";
+            txtSituacaoSalarial.ReadOnly = true;
+            txtSituacaoSalarial.Size = new Size(346 , 27);
+            txtSituacaoSalarial.TabIndex = 5;
             // 
             // bttCalcular
             // 
@@ -99,6 +99,7 @@
             bttCalcular.TabIndex = 6;
             bttCalcular.Text = "Calcular";
             bttCalcular.UseVisualStyleBackColor = false;
+            bttCalcular.Click += bttCalcular_Click;
             // 
             // lbxResumo
             // 
@@ -203,7 +204,7 @@
             Controls.Add(gbxCategoria);
             Controls.Add(lbxResumo);
             Controls.Add(bttCalcular);
-            Controls.Add(txtClass_Salarial);
+            Controls.Add(txtSituacaoSalarial);
             Controls.Add(txtHoraTrabalhada);
             Controls.Add(label2);
             Controls.Add(txtSalario);
@@ -223,7 +224,7 @@
         private TextBox txtSalario;
         private Label label2;
         private TextBox txtHoraTrabalhada;
-        private TextBox txtClass_Salarial;
+        private TextBox txtSituacaoSalarial;
         private Button bttCalcular;
         private ListBox lbxResumo;
         private ToolTip toolTip1;
