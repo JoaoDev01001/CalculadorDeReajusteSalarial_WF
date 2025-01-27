@@ -84,11 +84,13 @@
             // txtSituacaoSalarial
             // 
             txtSituacaoSalarial.BackColor = Color.Yellow;
+            txtSituacaoSalarial.Font = new Font("Courier New" , 13.8F , FontStyle.Bold , GraphicsUnit.Point , 0);
             txtSituacaoSalarial.Location = new Point(12 , 435);
             txtSituacaoSalarial.Name = "txtSituacaoSalarial";
             txtSituacaoSalarial.ReadOnly = true;
-            txtSituacaoSalarial.Size = new Size(346 , 27);
+            txtSituacaoSalarial.Size = new Size(346 , 34);
             txtSituacaoSalarial.TabIndex = 5;
+            txtSituacaoSalarial.TextAlign = HorizontalAlignment.Center;
             // 
             // bttCalcular
             // 
